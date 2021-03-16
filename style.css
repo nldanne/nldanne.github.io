@@ -1,0 +1,186 @@
+body {
+  background-color: #FFB691;
+}
+
+.page{
+  padding-left: 70px;
+  padding-top: 70px;
+  padding-right: 70px;
+  padding-bottom: 100px;
+  margin: 20px;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+li, a, button {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+  background-color: #272838;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.navlinks {
+  list-style: none;
+}
+
+.navlinks li {
+  display: inline-block;
+  padding: 0px 30px;
+}
+
+.navlinks li a {
+  transition: all 0.6 ease-out 0;
+}
+
+.navlinks li a:hover {
+  color: #2196F3;
+}
+
+
+button {
+  color: #edf0f1;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3 ease 0;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+
+h1 {
+  color: black;
+  font-size: 120px;
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  padding-top: 50px;
+
+}
+
+
+h2 {
+  color: #114E80;
+  font-size: 60px;
+  font-family: 'Montserrat';
+  padding-top: 100px;
+
+}
+
+h3 {
+  font-family: 'Montserrat';
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+
+/* The container of the checkbox elements */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'Montserrat';
+  font-size: 18px;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #eee;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+#text-first {
+  font-size: 50px;
+  text-decoration: underline;
+  line-height: 65px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+
+}
+
+#text-second {
+  position: relative;
+  height: auto;
+  width: 900px;
+  font-family: 'Montserrat';
+  font-size: 25px;
+  line-height: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
